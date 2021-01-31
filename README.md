@@ -1,6 +1,6 @@
 ## **TextView**
 
-### 跑马灯效果
+**跑马灯效果**
 
 ```xml-dtd
 android:ellipsize="marquee"	
@@ -20,7 +20,7 @@ tv.setSelected(true);
 
 
 
-### 删除线效果
+**删除线效果**
 
 ```
 private TextView tv;
@@ -33,7 +33,7 @@ ps：`Paint`是Android的画笔类，可以绘制图形或文本，对其颜色�
 
 
 
-### 下划线效果
+**下划线效果**
 
 ```java
 private TextView tv;
@@ -51,11 +51,13 @@ tv.setText(Html.fromHtml("<u>Hello World!</u>"));
 
 
 
+---
+
 
 
 ## Button
 
-### shape标签（用来配置圆角、阴影等）
+**shape标签（用来配置圆角、阴影等）**
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -80,7 +82,7 @@ tv.setText(Html.fromHtml("<u>Hello World!</u>"));
 
 
 
-### selector标签 （用来配置按压效果）
+**selector标签 （用来配置按压效果）**
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -292,7 +294,7 @@ public class MyListAdapter extends BaseAdapter {
         return 0;
     }
 
-    /** 自定义类，减少清系统负担，避免为每个的item的组件都实例化 */
+    /** 自定义类，减少系统负担，避免为每个的item的组件都实例化 */
     static class ViewHolder {
         public ImageView imageView;
         public TextView tvContent, tvName;
